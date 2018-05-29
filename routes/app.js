@@ -1,6 +1,6 @@
 var express = require('express');
 
-app = express();
+var app = express();
 
 // Rutas
 app.get('/', (req, res, next) => {
