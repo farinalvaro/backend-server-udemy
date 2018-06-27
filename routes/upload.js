@@ -107,7 +107,7 @@ function subirPorTipo(tipo, id, nombreArchivo, res) {
         });
     }
     if(tipo === 'medicos') {
-        Usuario.findById(id, (err, medico) => {
+        Medico.findById(id, (err, medico) => {
 
             if(!medico) {
                 res.status(400).json({
@@ -137,7 +137,7 @@ function subirPorTipo(tipo, id, nombreArchivo, res) {
         });
     }
     if(tipo === 'hospitales') {
-        Usuario.findById(id, (err, hospital) => {
+        Hospital.findById(id, (err, hospital) => {
 
             if(!hospital) {
                 res.status(400).json({
